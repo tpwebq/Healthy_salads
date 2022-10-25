@@ -1,5 +1,12 @@
 @include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
-
+@media all and (max-width: 767px), all and (orientation:portrait){
+    @include aoa-bg-series($img__classes--v,$img__aoa--v,0,"center","cover","scroll");
+    .about{
+        &-s1,&-s2{
+            background-position-y: center!important;
+        }
+    }
+}
 .bg{
     &-yellow{
         background-color: $color__yellow!important
@@ -8,6 +15,11 @@
 .border{
     &-yellow{
         border-color: $color__yellow!important
+    }
+}    
+.menu{
+    &-s1{
+        background-position-y: bottom;
     }
 }
 .navbar{
@@ -28,6 +40,10 @@
         color: $color__yellow!important
     }
 }
+h1,h2,h3,h4,h5,h6,.nav-link{
+    font-family: "Lobster";
+    letter-spacing: 2px;
+}
 header{
     z-index: 10;
 }
@@ -38,10 +54,17 @@ textarea{
     .navbar{
         &-nav{
             backdrop-filter: blur(5px); 
-            background-color: #fff;
-            border: 1px solid #999;
+            background-color: darken(#ffc107,20%);
+            border: 1px solid rgb(88, 104, 0);
             opacity: 0.9;
             padding: 10px;
+        }
+    }
+}
+@media all and (orientation:landscape){
+    .menu{
+        &-s1{
+            background-position-y: 70%;
         }
     }
 }

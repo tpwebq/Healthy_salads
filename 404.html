@@ -10,6 +10,37 @@
         <title>Healthy salads | Error</title>
     </header>
     <body class="bg-secondary">
+        <header class="position-absolute w-100 px-2">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a href="index.html" class="navbar-brand">
+                    <img class="navbar-logo" src="img/navbar_logo.png" alt="logo"/>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav ms-auto text-end text-uppercase fw-bold text-shadow">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-warning">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link text-warning">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link text-warning">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link text-warning">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="basket.html" class="nav-link text-warning">
+                                <span class="fa fa-shopping-cart"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <section class="error-s1 container-fluid min-vh-100 d-flex align-items-center py-5">
             <div class="row w-100 mx-0">
                 <div class="col-10 col-sm-8 col-md-6 text-end ms-auto pe-5">
@@ -26,11 +57,11 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="container-fluid fixed-bottom">
+        </section> 
+        <footer class="container-fluid d-flex align-items-center py-2 bg-warning border-top border-dark">
             <div class="row w-100 mx-0 text-center">
                 <div class="col-12 small">
-                    <p class="small text-dark">
+                    <p class="small text-dark mb-0">
                         Copyright &copy; 2022. All rights reserved. 
                         <a href="privacy.html" class="text-decoration-none text-dark">
                             Privacy policy
