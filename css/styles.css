@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster-Regular.ttf");
+}
 /* line 2, ../sass/partials/_minh.scss */
 .minh-auto {
   min-height: auto;
@@ -291,9 +295,54 @@ body, html {
 }
 
 /* line 31, ../sass/partials/_mixins.scss */
+.about-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.about-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/about/about-s2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.basket-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/basket/basket-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
 .comingsoon-s1 {
   background-attachment: scroll;
   background-image: url(../img/comingsoon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.contact-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/contact/contact-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.contact-s2 {
+  background-attachment: scroll;
+  background-image: url(../img/contact/contact-s2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,6 +358,24 @@ body, html {
 }
 
 /* line 31, ../sass/partials/_mixins.scss */
+.index-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/index/index-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.menu-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/menu/menu-s1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
 .privacy-s1 {
   background-attachment: scroll;
   background-image: url(../img/privacy.jpg);
@@ -317,52 +384,102 @@ body, html {
   background-size: cover;
 }
 
-/* line 4, ../sass/partials/_modules.scss */
+@media all and (max-width: 767px), all and (orientation: portrait) {
+  /* line 31, ../sass/partials/_mixins.scss */
+  .about-s1 {
+    background-attachment: scroll;
+    background-image: url(../img/about/about-s1v.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 31, ../sass/partials/_mixins.scss */
+  .about-s2 {
+    background-attachment: scroll;
+    background-image: url(../img/about/about-s2v.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 31, ../sass/partials/_mixins.scss */
+  .index-s1 {
+    background-attachment: scroll;
+    background-image: url(../img/index/index-s1v.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 5, ../sass/partials/_modules.scss */
+  .about-s1, .about-s2 {
+    background-position-y: center !important;
+  }
+}
+/* line 11, ../sass/partials/_modules.scss */
 .bg-yellow {
   background-color: #ffc81b !important;
 }
 
-/* line 9, ../sass/partials/_modules.scss */
+/* line 16, ../sass/partials/_modules.scss */
 .border-yellow {
   border-color: #ffc81b !important;
 }
 
-/* line 14, ../sass/partials/_modules.scss */
+/* line 21, ../sass/partials/_modules.scss */
+.menu-s1 {
+  background-position-y: bottom;
+}
+
+/* line 26, ../sass/partials/_modules.scss */
 .navbar-logo {
   height: 40px;
 }
 
-/* line 19, ../sass/partials/_modules.scss */
+/* line 31, ../sass/partials/_modules.scss */
 .privacy-s1 {
   background-position-x: right !important;
 }
 
-/* line 24, ../sass/partials/_modules.scss */
+/* line 36, ../sass/partials/_modules.scss */
 .text-shadow {
-  text-shadow: 1px 1px 3px #333;
+  text-shadow: 1px 1px 4px #111;
 }
-/* line 27, ../sass/partials/_modules.scss */
+/* line 39, ../sass/partials/_modules.scss */
 .text-yellow {
   color: #ffc81b !important;
 }
 
-/* line 31, ../sass/partials/_modules.scss */
+/* line 43, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "Lobster";
+  letter-spacing: 2px;
+}
+
+/* line 47, ../sass/partials/_modules.scss */
 header {
   z-index: 10;
 }
 
-/* line 34, ../sass/partials/_modules.scss */
+/* line 50, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 39, ../sass/partials/_modules.scss */
+  /* line 55, ../sass/partials/_modules.scss */
   .navbar-nav {
     backdrop-filter: blur(5px);
-    background-color: #fff;
-    border: 1px solid #999;
+    background-color: #a07800;
+    border: 1px solid #586800;
     opacity: 0.9;
     padding: 10px;
+  }
+}
+@media all and (orientation: landscape) {
+  /* line 66, ../sass/partials/_modules.scss */
+  .menu-s1 {
+    background-position-y: 70%;
   }
 }

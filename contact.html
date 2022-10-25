@@ -20,21 +20,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main-nav">
-                    <ul class="navbar-nav ms-auto text-end text-uppercase">
+                    <ul class="navbar-nav ms-auto text-end text-uppercase fw-bold text-shadow">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="index.html" class="nav-link text-warning">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">About</a>
+                            <a href="about.html" class="nav-link text-warning">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="menu.html" class="nav-link">Menu</a>
+                            <a href="menu.html" class="nav-link text-warning">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact</a>
+                            <a href="contact.html" class="nav-link text-warning">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="basket.html" class="nav-link">
+                            <a href="basket.html" class="nav-link text-warning">
                                 <span class="fa fa-shopping-cart"></span>
                             </a>
                         </li>
@@ -42,16 +42,14 @@
                 </div>
             </nav>
         </header>
-        <section class="contact-s1 minh-25vh d-none d-md-block">
-        </section>
-        <section class="contact-s2 minh-75vh container-fluid d-flex align-items-center py-5">
-            <div class="row w-100 mx-0">
-                <div class="col-12 col-md-7 minh-25vh"></div>
-                <div class="col-10 col-md-5 mx-auto d-flex align-items-center">
+        <section class="contact-s1 minh-50vh container-fluid d-flex align-items-center py-5">
+            <div class="row w-100 mx-0 pt-5 mt-5">
+                <div class="col-12 col-sm-6 col-md-7 minh-25vh"></div>
+                <div class="col-10 col-sm-6 col-md-5 offset-2 offset-sm-0 d-flex align-items-center">
                     <div>
                         <img class="navbar-logo" src="img/navbar_logo.png" alt="logo"/>
-                        <h1 class="display-3">Lorem ipsum</h1>
-                        <p class="">
+                        <h1 class="display-3 text-warning text-shadow">Lorem ipsum</h1>
+                        <p class="text-secondary">
                             Fusce suscipit, neque vel tincidunt sollicitudin, libero magna laoreet massa, 
                             eu pretium leo eros at mauris. Phasellus a lacus ipsum. Maecenas dapibus nisi 
                             ac fringilla pretium.
@@ -64,10 +62,14 @@
                         </address>
                     </div>
                 </div>
+            </div>
+        </section>            
+        <section class="contact-s2 minh-50vh container-fluid d-flex align-items-center py-5 border-top border-dark">
+            <div class="row w-100 mx-0">
                 <div class="col-12 col-md-6 py-5 mx-auto">
-                    <div class="card shadow mx-auto" id="contact-data">
-                        <div class="card-header bg-light">
-                            <h6 class="text-secondary mb-0 d-inline-block">
+                    <div class="card shadow mx-auto border-warning" id="contact-data">
+                        <div class="card-header bg-warning">
+                            <h6 class="text-dark mb-0 d-inline-block">
                                 Personal data
                             </h6>
                         </div>
@@ -92,19 +94,19 @@
                                 <label class="input-group-text bg-white col-4 col-md-3">Message:</label>
                                 <textarea class="col-8 col-md-9 form-control border-start-0 text-start"></textarea>
                             </div>                             
-                            <div class="mx-2 text-end border-top pt-3">
-                                <a href="#flight-details" class="btn btn-sm btn-outline-secondary rounded-pill">Clear</a>
-                                <a href="#payment-data" class="btn btn-sm btn-secondary rounded-pill">Send</a>
+                            <div class="mx-2 text-end border-top border-warning pt-3">
+                                <a href="#flight-details" class="btn btn-sm btn-outline-warning rounded-pill">Clear</a>
+                                <a href="#payment-data" class="btn btn-sm btn-warning rounded-pill">Send</a>
                             </div>   
                         </div>
                     </div>
                 </div>
             </div>
-        </section>        
-        <footer class="container-fluid">
+        </section>       
+        <footer class="container-fluid d-flex align-items-center py-2 bg-warning border-top border-dark">
             <div class="row w-100 mx-0 text-center">
                 <div class="col-12 small">
-                    <p class="small text-dark">
+                    <p class="small text-dark mb-0">
                         Copyright &copy; 2022. All rights reserved. 
                         <a href="privacy.html" class="text-decoration-none text-dark">
                             Privacy policy
